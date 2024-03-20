@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   }
 
-  function elementoSeleccionado(num, min, max) {
+  function elementoSeleccionado(elem, num, min, max) {
     let randPalette = Math.random();
     console.log(randPalette)
     if (randPalette <= 0.2) {
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
 
-    todosItems.forEach((el) => {
+    elem.forEach((el) => {
 
       asignacionColor(el);
 
@@ -228,13 +228,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function init() {
     document.body.style.backgroundColor = colorGap;
-    elementoSeleccionado(3, 2, 4);
-    elementoSeleccionado(6, 2, 4);
-    elementoSeleccionado(5, 2, 4);
-    elementoSeleccionado(2, 2, 4);
-    elementoSeleccionado(10, 2, 4);
-    elementoSeleccionado(3, 2, 4);
-    elementoSeleccionado(6, 2, 4);
+    elementoSeleccionado(todosItems, 3, 2, 4);
+    elementoSeleccionado(todosItems, 6, 2, 4);
+    elementoSeleccionado(todosItems, 5, 2, 4);
+    elementoSeleccionado(todosItems, 2, 2, 4);
+    elementoSeleccionado(todosItems, 10, 2, 4);
+    elementoSeleccionado(todosItems, 3, 2, 4);
+    elementoSeleccionado(todosItems, 6, 2, 4);
 
     cambioDimension(4);
     cambioDimension(8);
