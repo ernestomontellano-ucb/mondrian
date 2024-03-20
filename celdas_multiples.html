@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celdas múltiples</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap:3px;
+            height: 100vh;
+        }
+        .contenedor div{
+            background: red;
+            text-align: center;
+        }
+        .contenedor .item-1{
+            background: blue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+        .contenedor .item-2{
+            background: green;
+            grid-area: 3/2/5/3;
+/*   ROW-START / COLUMN-START / ROW-END / COLUMN-END           */
+          
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="item-1">1</div>
+        <div class="item-2">2</div>
+        <div class="item-3">3</div>
+        <div class="item-4">4</div>
+        <div class="item-5">5</div>
+        <div class="item-6">6</div>
+        <div class="item-7">7</div>
+        <div class="item-8">8</div>
+        <div class="item-9">9</div>
+        <div class="item-10">10</div>
+        <div class="item-11">11</div>
+        <div class="item-12">12</div>
+        <div class="item-13">13</div>
+        <div class="item-14">14</div>
+        <div class="item-15">15</div>
+        <div class="item-16">16</div>
+        <div class="item-17">17</div>
+        <div class="item-18">18</div>
+        <div class="item-19">19</div>
+        <div class="item-20">20</div>
+        <div class="item-21">21</div>
+        <div class="item-22">22</div>
+        <div class="item-23">23</div>
+        <div class="item-24">24</div>
+        <div class="item-25">25</div>
+    </div>
+</body>
+</html>

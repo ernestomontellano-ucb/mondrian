@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grillas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap:10px;
+            grid-template-areas: 
+                "header header header"
+                "sidebar columna-central columna-derecha"
+                "footer footer footer";
+            
+        }
+        .contenedor div{
+            background: red;
+            text-align: center;
+        }
+        .contenedor .item-1{
+            grid-area: header;
+        }
+        .contenedor .item-2{
+            grid-area: sidebar;
+        }
+
+        .contenedor .item-3{
+            grid-area: columna-central;
+        }
+
+        .contenedor .item-4{
+            grid-area: columna-derecha
+        }
+
+        .contenedor .item-5{
+            grid-area:footer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <div class="item-1">1</div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>
+    <div class="item-4">4</div>
+    <div class="item-5">5</div>
+</div>
+    
+</body>
+</html>
